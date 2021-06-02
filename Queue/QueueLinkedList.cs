@@ -27,7 +27,6 @@ namespace DataStructureAlgorithm.Queue
             }
             return;
         }
-
          //Dequeue
         public int Dequeue(){            
             if (Head == null){
@@ -46,6 +45,24 @@ namespace DataStructureAlgorithm.Queue
            
         }
 
+        //Dequeue Node - For Binary Tree implementation only (Fail)
+        public Node DequeueNode(){            
+            if (Head == null){
+                Console.WriteLine("Queue is EMpty");
+                return null;
+            }else if( Head == Tail){
+                var returnNode = Head;
+                Head=null;
+                Tail=null;
+                return returnNode;
+            }else{
+                var returnNode = Head;
+                Head=Head.Next;
+                return returnNode;
+            }
+           
+        }
+
         //Print
 
         public void Print(){
@@ -60,6 +77,10 @@ namespace DataStructureAlgorithm.Queue
             }
             Console.WriteLine();
             return;
+        }
+
+        public bool IsEmpty(){
+            return Head==null;
         }
     }
 }
