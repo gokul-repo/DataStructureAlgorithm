@@ -67,5 +67,25 @@ namespace DataStructureAlgorithm.BinaryTree
             postOrder(root.RightChild);
             Console.WriteLine(root.Value);
         }
+
+         public void LevelOrder(Node root){
+            if(root==null){
+                return;
+            }
+            System.Collections.Queue queue = new System.Collections.Queue();
+            Console.WriteLine(root.Value);
+            queue.Enqueue(root);
+            while (queue.Count!=0){
+                Node curr = (Node)queue.Dequeue();
+                if(curr.LeftChild!=null){
+                    Console.WriteLine(curr.LeftChild.Value);
+                    queue.Enqueue(curr.LeftChild);
+                }
+                if(curr.RightChild!=null){
+                    Console.WriteLine(curr.RightChild.Value);
+                    queue.Enqueue(curr.RightChild);
+                }
+            }            
+        }
     }
 }
