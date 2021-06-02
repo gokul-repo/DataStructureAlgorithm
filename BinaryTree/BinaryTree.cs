@@ -87,5 +87,93 @@ namespace DataStructureAlgorithm.BinaryTree
                 }
             }            
         }
+
+        public void PreOrderIterative(Node root){
+            if (root == null){
+                return;
+            }
+            System.Collections.Stack myStack = new System.Collections.Stack();
+            var curr= root;           
+            while ( curr != null || myStack.Count!=0){
+                if (curr != null){
+                    Console.WriteLine(curr.Value);
+                    myStack.Push(curr);
+                    curr=curr.LeftChild;
+                }else{
+                     curr = (Node)myStack.Pop();
+                     curr=curr.RightChild;                   
+                }
+            }
+
+        }
+
+        public void InOrderIterative(Node root){
+            if (root == null){
+                return;
+            }
+            System.Collections.Stack myStack = new System.Collections.Stack();
+            var curr= root;           
+            while ( curr != null || myStack.Count!=0){
+                if (curr != null){                    
+                    myStack.Push(curr);
+                    curr=curr.LeftChild;
+                }else{
+                     curr = (Node)myStack.Pop();
+                     Console.WriteLine(curr.Value);
+                     curr=curr.RightChild;                   
+                }
+            }
+
+        }
+        public void PostOrderIterative(Node root){
+
+        }
+
+        public int Count(Node root){
+            if (root == null){
+                return 0;
+            }
+            int x= Count(root.LeftChild);
+            int y= Count(root.RightChild);
+            return x+y+1;
+        }
+
+        public int CountLeaf(Node root){
+            if(root == null){
+                return 0;
+            }
+            int x= CountLeaf(root.LeftChild);
+            int y= CountLeaf(root.RightChild);
+            if (root.LeftChild==null&& root.RightChild==null){
+                return x+y+1;
+            }
+            return x+y;
+        }
+
+        public int CountNonLeaf(Node root){
+            if(root == null){
+                return 0;
+            }
+            int x= CountNonLeaf(root.LeftChild);
+            int y= CountNonLeaf(root.RightChild);
+            if (root.LeftChild!=null || root.RightChild!=null){
+                return x+y+1;
+            }
+            return x+y;
+        }
+
+         public int Height(Node root){
+            if(root == null){
+                return 0;
+            }
+            int x= Height(root.LeftChild);
+            int y= Height(root.RightChild);
+            if (x >y){
+                return x+1;
+            }else{
+                return y+1;
+            }         
+        }
+          
     }
 }
