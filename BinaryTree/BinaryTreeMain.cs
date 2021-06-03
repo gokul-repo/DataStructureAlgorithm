@@ -4,6 +4,21 @@ namespace DataStructureAlgorithm.BinaryTree
 {
     public class BinaryTreeMain
     {
+        //1. Creat a Binary tree from user input
+        //2. In Order Traversal - Recursive
+        //3. In Order Traversal - Iterative
+        //4. Pre Order Traversal - Recursive
+        //5. Pre Order Traversal - Iterative
+        //6. Post Order Traversal - Iterative
+        //7. Count of all Nodes
+        //8. Count of Leaf Nodes
+        //8. Count of Non Leaf Nodes
+        //9. Height
+
+        //To DO :
+        //1. Creat a BT using inorder and post order
+        //2. Creat a BT using inorder and pre order
+        //3. Leetcode - Binary Tree
         static void main(string[] args)
         {
             BinaryTrees myBT = new BinaryTrees();
