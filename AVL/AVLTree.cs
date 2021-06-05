@@ -89,12 +89,12 @@ namespace DataStructureAlgorithm.AVL
         public Node RLRotation(Node root)
         {
             Node rootRight = root.RightChild;
-             Node rootRightLeft = rootRight.LeftChild;
+            Node rootRightLeft = rootRight.LeftChild;
 
             rootRight.LeftChild = rootRightLeft.RightChild;
             root.RightChild = rootRightLeft.LeftChild;
             rootRightLeft.RightChild = rootRight;
-            rootRight.LeftChild = root;
+            rootRightLeft.LeftChild = root;
 
             rootRight.Height = NodeHeight(rootRight);
             root.Height = NodeHeight(root);
@@ -112,7 +112,7 @@ namespace DataStructureAlgorithm.AVL
         {
             Node newNode = new Node(val);
             if (root == null)
-            {                
+            {
                 return newNode;
             }
 
@@ -164,6 +164,97 @@ namespace DataStructureAlgorithm.AVL
             inOrder(root.LeftChild);
             Console.WriteLine(root.Value);
             inOrder(root.RightChild);
+        }
+
+        //Delete
+        public Node Delete(Node root, int key)
+        {
+            //Regular BST Delete
+            if (root == null)
+            {
+                return null;
+            }
+
+             if(root.LeftChild == null && root.RightChild ==null){
+                    if(Root==root){
+                        Root=null;
+                    }
+                    root = null;
+                    return root;
+            }
+            if (key < root.Value)
+            {
+                root.LeftChild = Delete(root.LeftChild, key);
+            }
+            else if (key > root.Value)
+            {
+                root.RightChild = Delete(root.RightChild, key);
+            }
+            else if(key == root.Value){
+                if (NodeHeight(root.LeftChild) > NodeHeight(root.RightChild)){
+                    Node Pred = inOrderPredecessor(root);
+                    root.Value=Pred.Value;
+                    root.LeftChild = Delete(root.LeftChild,Pred.Value);
+                }else{
+                    Node Succ = inOrderSuccessor(root);
+                    root.Value=Succ.Value;
+                    root.RightChild = Delete(root.RightChild,Succ.Value);
+                }
+            }
+
+            //Recaulculate height
+            root.Height= NodeHeight(root);
+
+            //Delete
+            if (BalanceFactor(root)==2 && BalanceFactor(root.LeftChild)==1){
+                //L1 Deletion do LL Rotation(right rotation)
+                return LLRotation(root);
+            }else if(BalanceFactor(root)==2 && BalanceFactor(root.LeftChild)==-1){
+                //L-1 Deletion do LR Rotation
+                return LRRotation(root);
+            }else if(BalanceFactor(root)==2 && BalanceFactor(root.LeftChild)==0){ 
+                //L0 Deletion do LL or LR rotation
+                return LLRotation(root);
+            }else if (BalanceFactor(root)==-2 && BalanceFactor(root.LeftChild)==-1){
+                //R-1 Deletion do RR Rotation(Left rotation)
+                return RRRotation(root);
+            }else if(BalanceFactor(root)==-2 && BalanceFactor(root.LeftChild)==1){
+                //R1 Deletion do RL Rotation
+                return RLRotation(root);
+            }else if(BalanceFactor(root)==-2 && BalanceFactor(root.LeftChild)==0){ 
+                //R0 Deletion do RR or RL rotation
+                return RRRotation(root);
+            }
+            return root;
+        }
+
+        public Node inOrderPredecessor(Node root){
+            if (root == null)
+            {
+                return null;
+            }
+            Node prev = null;
+            Node curr = root.LeftChild;
+            while (curr != null)
+            {
+                prev = curr;
+                curr = curr.RightChild;
+            }
+            return prev;
+        }
+         public Node inOrderSuccessor(Node root){
+            if (root == null)
+            {
+                return null;
+            }
+            Node prev = null;
+            Node curr = root.RightChild;
+            while (curr != null)
+            {
+                prev = curr;
+                curr = curr.LeftChild;
+            }
+            return prev;
         }
     }
 }
