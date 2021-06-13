@@ -215,13 +215,13 @@ namespace DataStructureAlgorithm.AVL
             }else if(BalanceFactor(root)==2 && BalanceFactor(root.LeftChild)==0){ 
                 //L0 Deletion do LL or LR rotation
                 return LLRotation(root);
-            }else if (BalanceFactor(root)==-2 && BalanceFactor(root.LeftChild)==-1){
+            }else if (BalanceFactor(root)==-2 && BalanceFactor(root.RightChild)==-1){
                 //R-1 Deletion do RR Rotation(Left rotation)
                 return RRRotation(root);
-            }else if(BalanceFactor(root)==-2 && BalanceFactor(root.LeftChild)==1){
+            }else if(BalanceFactor(root)==-2 && BalanceFactor(root.RightChild)==1){
                 //R1 Deletion do RL Rotation
                 return RLRotation(root);
-            }else if(BalanceFactor(root)==-2 && BalanceFactor(root.LeftChild)==0){ 
+            }else if(BalanceFactor(root)==-2 && BalanceFactor(root.RightChild)==0){ 
                 //R0 Deletion do RR or RL rotation
                 return RRRotation(root);
             }
