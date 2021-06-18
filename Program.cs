@@ -123,6 +123,15 @@ namespace DataStructureAlgorithm
             myBFSgraph2.ShortestPath_Main();
            
             #endregion
+
+
+              #region Rooting a Tree
+           
+            Console.WriteLine("\n \n---------------Rooting a Tree-----------------");
+            RootingTree rootTree = new RootingTree();
+            rootTree.RootingTree_Main();
+           
+            #endregion
         }
     }
 }

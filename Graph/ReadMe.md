@@ -7,8 +7,10 @@
 5. William Fiset    -- DFS Iterative
 6. William Fiset    -- DFS Recursion
 7. William Fiset    -- Shortest Path Unweighted Graph - Modified BFS
+8. William Fiset    -- Rooting a Tree from a given Graph 
 
 
 # To DO 
 
 1. William Fiset    -- Shortest Path in a Grid - BFS
+2. William Fiset    -- Print function for Rootinf a Tree (item 8) - Not important
