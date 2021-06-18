@@ -83,7 +83,7 @@ namespace DataStructureAlgorithm
             Console.WriteLine("\n BFS node count starting at node 0: " + nodeCount);
             if (nodeCount != 1)
                 Console.WriteLine("\n Error with BFS");
-            
+
 
             Console.WriteLine("\n \n---------------BFS Recursive-----------------");
             nodeCount = myBFSgraph.BFSRecursive(1, new bool[numberOfNodes + 1]);// the +1 coz i am starting nodes from 1 instaed of zero
@@ -114,8 +114,15 @@ namespace DataStructureAlgorithm
             nodeCount = myBFSgraph1.BFSRecursive(0, new bool[numberOfNodes]);
             Console.WriteLine("\n BFS node count starting at node 1: " + nodeCount);
 
-        #endregion   
+            #endregion
+
+            #region Shortest Path - Modified BFS
            
+            Console.WriteLine("\n \n---------------BFS Shortest Path of Unweighted Graph-----------------");
+            ShortestPathBFS myBFSgraph2 = new ShortestPathBFS();
+            myBFSgraph2.ShortestPath_Main();
+           
+            #endregion
         }
     }
 }
