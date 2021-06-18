@@ -1,4 +1,5 @@
 ﻿using System;
+using DataStructureAlgorithm.Graph;
 using DataStructureAlgorithm.Hashing;
 
 
@@ -6,68 +7,115 @@ namespace DataStructureAlgorithm
 {
     internal class Program
     {
-        //1. Hashing -  Chaining
-        //2. Linear Probing
-        //3. Quadratic Probing (Did not implemet as its similar to Linear - Just change i to i*i)
-        //4. Double Hashing
+        //1. BFS - Adj. Matrix
+        //2. BFS - Adj. List
+        //3. DFS - Adj. Matrix
+        //4. DFS - Adj. List
 
         static void Main(string[] args)
         {
-            // Chaining      
-            Console.WriteLine("------Chaining---------");
-            HashTable newHT = new HashTable(10);
-            newHT.Insert(0);
-            newHT.Insert(1);
-            newHT.Insert(2);
-            newHT.Insert(3);
-            newHT.Insert(4);
-            newHT.Insert(55);
-            newHT.Insert(6);
-            newHT.Insert(7);
-            newHT.Insert(8);
-            newHT.Insert(9);     
-             newHT.Insert(15);
-            newHT.Insert(35);
-            newHT.Insert(25);
-            newHT.Insert(95);
-            newHT.Insert(45);
-            newHT.Insert(5);
-            Console.WriteLine(newHT.Search(0));             
-            Console.WriteLine(newHT.Search(99));
-            Console.WriteLine(newHT.Search(5));
-            Console.WriteLine(newHT.Search(25));
-            Console.WriteLine(newHT.Search(95));
-            Console.WriteLine(newHT.Search(100));
 
-            //Linear Probing
-            Console.WriteLine("------Linear Probing---------");
-            HashTableLinearProbing myHT = new HashTableLinearProbing(10);
-            myHT.Insert(10);
-            myHT.Insert(11);
-            myHT.Insert(5);
-            myHT.Insert(15);
-            myHT.Insert(26);
 
-            Console.WriteLine(myHT.Search(10));             
-            Console.WriteLine(myHT.Search(15));
-            Console.WriteLine(myHT.Search(26));
-            Console.WriteLine(myHT.Search(20));
+            #region DFS - William Fiset
 
-            //Double Hashing
-            Console.WriteLine("------Double Hashing---------");
 
-             HashTableDoubleHashing myHT1 = new HashTableDoubleHashing(10);
-            myHT1.Insert(5);
-            myHT1.Insert(25);
-            myHT1.Insert(15);
-            myHT1.Insert(35);
-            myHT1.Insert(95);
 
-            Console.WriteLine(myHT1.Search(5));             
-            Console.WriteLine(myHT1.Search(15));
-            Console.WriteLine(myHT1.Search(95));
-            Console.WriteLine(myHT1.Search(20));           
+            // Create a fully connected graph
+            //           (0)
+            //           / \
+            //        5 /   \ 4
+            //         /     \
+            // 10     <   -2  >
+            //   +->(2)<------(1)      (4)
+            //   +--- \       /
+            //         \     /
+            //        1 \   / 6
+            //           > <
+            //           (3)
 
+            GraphDS mygraph = new GraphDS();
+            mygraph.AddDirectedEdge(0, 1, 4);
+            mygraph.AddDirectedEdge(0, 2, 5);
+            mygraph.AddDirectedEdge(1, 2, -2);
+            mygraph.AddDirectedEdge(1, 3, 6);
+            mygraph.AddDirectedEdge(2, 3, 1);
+            mygraph.AddDirectedEdge(2, 2, 10);
+
+            int numberOfNodes = 5;
+            Console.WriteLine("---------------DFS Recursive-----------------");
+            int nodeCount = mygraph.DFSRecursive(0, new bool[numberOfNodes]);
+            Console.WriteLine("\n DFS node count starting at node 0: " + nodeCount);
+            if (nodeCount != 4)
+                Console.WriteLine("\n Error with DFS");
+            nodeCount = mygraph.DFSRecursive(4, new bool[numberOfNodes]);
+            Console.WriteLine("\n DFS node count starting at node 4: " + nodeCount);
+            if (nodeCount != 1)
+                Console.WriteLine("\n Error with DFS");
+
+            Console.WriteLine("\n \n---------------DFS Iterative-----------------");
+            nodeCount = mygraph.DFSIterative(0, new bool[numberOfNodes]);
+            Console.WriteLine("\n DFS node count starting at node 0: " + nodeCount);
+            if (nodeCount != 4)
+                Console.WriteLine("\n Error with DFS");
+            nodeCount = mygraph.DFSIterative(4, new bool[numberOfNodes]);
+            Console.WriteLine("\n DFS node count starting at node 4: " + nodeCount);
+            if (nodeCount != 1)
+                Console.WriteLine("\n Error with DFS");
+
+            #endregion
+
+            #region BFS - William Fiset           
+
+            GraphDS myBFSgraph = new GraphDS();
+            myBFSgraph.AddUnWeightedUndirectedEdge(1, 2);
+            myBFSgraph.AddUnWeightedUndirectedEdge(1, 3);
+            myBFSgraph.AddUnWeightedUndirectedEdge(2, 4);
+            myBFSgraph.AddUnWeightedUndirectedEdge(3, 4);
+            myBFSgraph.AddUnWeightedUndirectedEdge(4, 5);
+            myBFSgraph.AddUnWeightedUndirectedEdge(4, 6);
+            numberOfNodes = 6;
+            Console.WriteLine("\n \n---------------BFS Iterative-----------------");
+            nodeCount = myBFSgraph.BFSIterative(1, new bool[numberOfNodes + 1]);// the +1 coz i am starting nodes from 1 instaed of zero
+            Console.WriteLine("\n BFS node count starting at node 1: " + nodeCount);
+            if (nodeCount != 6)
+                Console.WriteLine("\n Error with BFS");
+            nodeCount = myBFSgraph.BFSIterative(0, new bool[numberOfNodes + 1]);
+            Console.WriteLine("\n BFS node count starting at node 0: " + nodeCount);
+            if (nodeCount != 1)
+                Console.WriteLine("\n Error with BFS");
+            
+
+            Console.WriteLine("\n \n---------------BFS Recursive-----------------");
+            nodeCount = myBFSgraph.BFSRecursive(1, new bool[numberOfNodes + 1]);// the +1 coz i am starting nodes from 1 instaed of zero
+            Console.WriteLine("\n BFS node count starting at node 1: " + nodeCount);
+            if (nodeCount != 6)
+                Console.WriteLine("\n Error with BFS");
+            nodeCount = myBFSgraph.BFSRecursive(0, new bool[numberOfNodes + 1]);
+            Console.WriteLine("\n BFS node count starting at node 0: " + nodeCount);
+            if (nodeCount != 1)
+                Console.WriteLine("\n Error with BFS");
+
+            GraphDS myBFSgraph1 = new GraphDS();
+            myBFSgraph1.AddUnWeightedUndirectedEdge(0, 1);
+            myBFSgraph1.AddUnWeightedUndirectedEdge(0, 2);
+            myBFSgraph1.AddUnWeightedUndirectedEdge(0, 3);
+            myBFSgraph1.AddUnWeightedUndirectedEdge(2, 9);
+            myBFSgraph1.AddUnWeightedUndirectedEdge(8, 2);
+            myBFSgraph1.AddUnWeightedUndirectedEdge(3, 4);
+            myBFSgraph1.AddUnWeightedUndirectedEdge(10, 11);
+            myBFSgraph1.AddUnWeightedUndirectedEdge(12, 13);
+            myBFSgraph1.AddUnWeightedUndirectedEdge(3, 5);
+            myBFSgraph1.AddUnWeightedUndirectedEdge(5, 7);
+            myBFSgraph1.AddUnWeightedUndirectedEdge(5, 6);
+            myBFSgraph1.AddUnWeightedUndirectedEdge(0, 10);
+            myBFSgraph1.AddUnWeightedUndirectedEdge(11, 12);
+            numberOfNodes = 14;
+            Console.WriteLine("\n \n---------------BFS Recursive - Testing William Example-----------------");
+            nodeCount = myBFSgraph1.BFSRecursive(0, new bool[numberOfNodes]);
+            Console.WriteLine("\n BFS node count starting at node 1: " + nodeCount);
+
+        #endregion   
+           
         }
     }
 }
