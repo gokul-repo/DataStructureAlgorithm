@@ -14,6 +14,7 @@ namespace DataStructureAlgorithm.BinaryTree
         //8. Count of Leaf Nodes
         //8. Count of Non Leaf Nodes
         //9. Height
+        //10. Sum of Leaf Nodes
 
         //To DO :
         //1. Creat a BT using inorder and post order
@@ -40,6 +41,7 @@ namespace DataStructureAlgorithm.BinaryTree
             Console.WriteLine("Total number of Leaf Node {0}", myBT.CountLeaf(myBT.RootNode));
             Console.WriteLine("Total number of Non Leaf Node {0}", myBT.CountNonLeaf(myBT.RootNode));
             Console.WriteLine("Height is {0}", myBT.Height(myBT.RootNode));
+            Console.WriteLine("Sum Of Leaf Node values is {0}", myBT.SumOfLeafNodes(myBT.RootNode));
         }
     }
 }

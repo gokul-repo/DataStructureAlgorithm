@@ -174,6 +174,19 @@ namespace DataStructureAlgorithm.BinaryTree
                 return y+1;
             }         
         }
+
+        public int SumOfLeafNodes(Node root){
+            if(root == null){
+                return 0;
+            }
+            if(root.LeftChild ==null && root.RightChild==null){
+                return root.Value;
+            }
+            int total = 0;
+            total += SumOfLeafNodes(root.LeftChild);
+            total += SumOfLeafNodes(root.RightChild);
+            return total;
+        }
           
     }
 }
