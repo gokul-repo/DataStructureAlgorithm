@@ -161,6 +161,13 @@ namespace DataStructureAlgorithm
             TopSort ts = new TopSort();
             ts.TopSort_Main();
             #endregion
+
+            #region Top Sort - Kahns Algorithm
+
+            Console.WriteLine("\n \n---------------Top Sort - Kahns Algorithm-----------------");
+            TopSortKahn tsk = new TopSortKahn();
+            tsk.TopSortKahn_Main();
+            #endregion
         }
     }
 }
