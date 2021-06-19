@@ -154,6 +154,13 @@ namespace DataStructureAlgorithm
             LCA lca = new LCA();
             lca.LCA_Main();
             #endregion
+
+            #region Top Sort - DFS
+
+            Console.WriteLine("\n \n---------------Top Sort - DFS-----------------");
+            TopSort ts = new TopSort();
+            ts.TopSort_Main();
+            #endregion
         }
     }
 }
