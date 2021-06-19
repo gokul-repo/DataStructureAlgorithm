@@ -117,28 +117,35 @@ namespace DataStructureAlgorithm
             #endregion
 
             #region Shortest Path - Modified BFS
-           
+
             Console.WriteLine("\n \n---------------BFS Shortest Path of Unweighted Graph-----------------");
             ShortestPathBFS myBFSgraph2 = new ShortestPathBFS();
             myBFSgraph2.ShortestPath_Main();
-           
+
             #endregion
 
 
-              #region Rooting a Tree
-           
+            #region Rooting a Tree
+
             Console.WriteLine("\n \n---------------Rooting a Tree-----------------");
             RootingTree rootTree = new RootingTree();
             rootTree.RootingTree_Main();
-           
+
             #endregion
 
-               #region Center of a Tree
-           
+            #region Center of a Tree
+
             Console.WriteLine("\n \n---------------Center of a Tree-----------------");
             TreeCenter tree = new TreeCenter();
             tree.TreeCenter_Main();
-           
+
+            #endregion
+
+            #region Center of a Tree
+
+            Console.WriteLine("\n \n---------------Encoding of a Tree and Find Trees are Isomorphic-----------------");
+            IsomorphicTree isoTree = new IsomorphicTree();
+            isoTree.Isomorphic_Main();
             #endregion
         }
     }

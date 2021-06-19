@@ -32,5 +32,23 @@ namespace DataStructureAlgorithm.Graph
             }
             return root;
         }
+
+        public string Encode(TreeNode root){    
+            //base case
+            if(root == null){
+                return "";
+            }   
+            //DFS - for each child go into 
+            List<string> output=new List<string>();
+            foreach(var child in root.ChildrenNodes){
+                output.Add(Encode(child));
+            }
+            output.Sort();
+            string outputString="";            
+            foreach(var item in output){
+                outputString=outputString+item.ToString();
+            }
+            return "("+ outputString + ")";
+        }
     }    
 }
