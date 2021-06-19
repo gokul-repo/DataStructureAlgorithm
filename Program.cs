@@ -147,6 +147,13 @@ namespace DataStructureAlgorithm
             IsomorphicTree isoTree = new IsomorphicTree();
             isoTree.Isomorphic_Main();
             #endregion
+
+            #region LCA of a Tree - Recursion DFS
+
+            Console.WriteLine("\n \n---------------LCA of a Tree - Recursion DFS-----------------");
+            LCA lca = new LCA();
+            lca.LCA_Main();
+            #endregion
         }
     }
 }
