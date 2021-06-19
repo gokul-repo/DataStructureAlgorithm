@@ -8,6 +8,7 @@
 6. William Fiset    -- DFS Recursion
 7. William Fiset    -- Shortest Path Unweighted Graph - Modified BFS
 8. William Fiset    -- Rooting a Tree from a given Graph 
+9. William Fiset    -- Finding Center of a Tree - (Pruning leaves layer by layer)
 
 
 # To DO 

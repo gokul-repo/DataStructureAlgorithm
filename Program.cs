@@ -132,6 +132,14 @@ namespace DataStructureAlgorithm
             rootTree.RootingTree_Main();
            
             #endregion
+
+               #region Center of a Tree
+           
+            Console.WriteLine("\n \n---------------Center of a Tree-----------------");
+            TreeCenter tree = new TreeCenter();
+            tree.TreeCenter_Main();
+           
+            #endregion
         }
     }
 }
