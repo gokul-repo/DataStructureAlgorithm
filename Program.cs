@@ -168,6 +168,14 @@ namespace DataStructureAlgorithm
             TopSortKahn tsk = new TopSortKahn();
             tsk.TopSortKahn_Main();
             #endregion
+
+             #region Top Sort - SSSP
+
+            Console.WriteLine("\n \n---------------Top Sort - SSSP-----------------");
+            SingleSourceShortestPathTopSort ssspts = new SingleSourceShortestPathTopSort();
+            ssspts.SSSPTopSort_Main();
+            #endregion
+            
         }
     }
 }
