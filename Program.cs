@@ -20,8 +20,11 @@ namespace DataStructureAlgorithm
             // InsertionSort inSort = new InsertionSort();
             // inSort.main();
 
-             SelectionSort selectSort = new SelectionSort();
-            selectSort.main();
+            //  SelectionSort selectSort = new SelectionSort();
+            // selectSort.main();
+             
+            QuickSort qs = new QuickSort();
+            qs.main();
         }
     }
 }
