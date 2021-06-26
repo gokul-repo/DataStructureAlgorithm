@@ -29,8 +29,11 @@ namespace DataStructureAlgorithm
             // MergeSort ms = new MergeSort();
             // ms.main();
           
-            CountSort cs = new CountSort();
-            cs.main();
+            // CountSort cs = new CountSort();
+            // cs.main();
+
+            BucketSort bs = new BucketSort();
+            bs.main();
         }
     }
 }
