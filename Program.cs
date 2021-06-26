@@ -23,8 +23,11 @@ namespace DataStructureAlgorithm
             //  SelectionSort selectSort = new SelectionSort();
             // selectSort.main();
              
-            QuickSort qs = new QuickSort();
-            qs.main();
+            // QuickSort qs = new QuickSort();
+            // qs.main();
+
+            MergeSort ms = new MergeSort();
+            ms.main();
         }
     }
 }
