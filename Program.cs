@@ -17,8 +17,11 @@ namespace DataStructureAlgorithm
             // sum.main(); 
             //  Factorial fact= new Factorial();
             // fact.main();   
-            Power pow= new Power();
-            pow.main();   
+            // Power pow= new Power();
+            // pow.main(); 
+
+            TaylorSeries taylorSeries=new TaylorSeries()  ;
+            taylorSeries.main();
         }
     }
 }
