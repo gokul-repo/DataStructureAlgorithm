@@ -34,8 +34,12 @@ namespace DataStructureAlgorithm
 
             // BucketSort bs = new BucketSort();
             // bs.main();
-             RadixSort bs = new RadixSort();
-            bs.main();
+           
+            //  RadixSort bs = new RadixSort();
+            // bs.main();
+
+            ShellSort ss = new ShellSort();
+            ss.main();            
         }
     }
 }
