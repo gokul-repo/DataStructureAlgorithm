@@ -10,3 +10,5 @@
 6. Factorial - `Factorial.cs`
 7. Power - `Power.cs`
 8. Taylor Series - `TayorSeries.cs`
+9. Taylor Series with Horner's rule - `TayorSeries.cs`
+10. Fibonnacci - `Fibonnacci.cs`

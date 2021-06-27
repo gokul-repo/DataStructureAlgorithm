@@ -20,8 +20,10 @@ namespace DataStructureAlgorithm
             // Power pow= new Power();
             // pow.main(); 
 
-            TaylorSeries taylorSeries=new TaylorSeries()  ;
-            taylorSeries.main();
+            // TaylorSeries taylorSeries=new TaylorSeries()  ;
+            // taylorSeries.main();
+            Fibonnacci fibonnacci= new Fibonnacci();
+            fibonnacci.main();
         }
     }
 }
