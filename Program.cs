@@ -32,7 +32,9 @@ namespace DataStructureAlgorithm
             // CountSort cs = new CountSort();
             // cs.main();
 
-            BucketSort bs = new BucketSort();
+            // BucketSort bs = new BucketSort();
+            // bs.main();
+             RadixSort bs = new RadixSort();
             bs.main();
         }
     }

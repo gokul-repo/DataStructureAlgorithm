@@ -40,6 +40,13 @@ namespace DataStructureAlgorithm.Sorting
             }
         }
 
+        //Count sort GeekforGeeks way (This is what used in many articles)
+        //https://www.geeksforgeeks.org/counting-sort/
+         public void CountGG(int[] list)
+        {
+           //To Do
+        }
+
         public int Max(int[] array)
         {
             int max = 0;
