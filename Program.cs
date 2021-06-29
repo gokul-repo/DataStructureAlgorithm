@@ -22,8 +22,14 @@ namespace DataStructureAlgorithm
 
             // TaylorSeries taylorSeries=new TaylorSeries()  ;
             // taylorSeries.main();
-            Fibonnacci fibonnacci= new Fibonnacci();
-            fibonnacci.main();
+            // Fibonnacci fibonnacci= new Fibonnacci();
+            // fibonnacci.main();
+
+            // Combination combination= new Combination();
+            // combination.main();
+
+            TowerOfHanoi towerOfHanoi= new TowerOfHanoi();
+            towerOfHanoi.main();
         }
     }
 }
