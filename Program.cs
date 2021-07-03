@@ -10,8 +10,14 @@ namespace DataStructureAlgorithm
         static void Main(string[] args)
         {
 
-            BinarySearch bs = new BinarySearch();
-            bs.BinarySearchMain();
+            // BinarySearch bs = new BinarySearch();
+            // bs.BinarySearchMain();
+
+            // MergeSort ms = new MergeSort();
+            // ms.MergeSort_Main();
+
+             QuickSort qs = new QuickSort();
+             qs.QuickSort_Main();
         }
     }
 }
