@@ -1,4 +1,5 @@
 using System;
+using static DataStructureAlgorithm.Utilities.Utilities;
 
 namespace DataStructureAlgorithm.Algortihms
 {
@@ -16,10 +17,10 @@ namespace DataStructureAlgorithm.Algortihms
             Console.WriteLine("----------Merge Sort-------------");
             Console.WriteLine("----------Recursion-------------");
             Console.WriteLine("Before ->");
-            Print(list);
+            PrintArray(list);
             MergeSortRecursion(list, 0, list.Length - 1);
             Console.WriteLine("After ->");
-            Print(list);
+            PrintArray(list);
         }
 
         public void MergeSortRecursion(int[] list, int strt, int end)
@@ -82,13 +83,6 @@ namespace DataStructureAlgorithm.Algortihms
 
         }
 
-        public static void Print(int[] list)
-        {
-            foreach (var item in list)
-            {
-                Console.Write(item + "  ");
-            }
-            Console.WriteLine();
-        }
+       
     }
 }

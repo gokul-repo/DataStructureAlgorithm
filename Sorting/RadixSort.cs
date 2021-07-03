@@ -1,4 +1,5 @@
 using System;
+using static DataStructureAlgorithm.Utilities.Utilities;
 
 namespace DataStructureAlgorithm.Sorting
 {
@@ -12,10 +13,10 @@ namespace DataStructureAlgorithm.Sorting
             int[] list = new int[] { 330, 8, 27, 4419, 55, 816, 419, 77, 622, 1234, 6, 9, 241, 1, 35, 7733, 4, 69 };
             Console.WriteLine("----------------Radix Sort---------------");
             Console.WriteLine("Before Sort --->");
-            Utilities.Print(list);
+            PrintArray(list);
             Radix(list);
             Console.WriteLine("After Sort --->");
-            Utilities.Print(list);
+            PrintArray(list);
         }
 
         public void Radix(int[] list)

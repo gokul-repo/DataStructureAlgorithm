@@ -1,4 +1,5 @@
 using System;
+using static DataStructureAlgorithm.Utilities.Utilities;
 
 namespace DataStructureAlgorithm.Sorting
 {
@@ -9,10 +10,10 @@ namespace DataStructureAlgorithm.Sorting
             int[] list = new int[] { 8, 5, 3,9,9,4, 7,1,5,5, 2, 4, 1, 9, 6 ,8};
             Console.WriteLine("----------------Count Sort---------------");
             Console.WriteLine("Before Sort --->");
-            Utilities.Print(list);
+            PrintArray(list);
             Count(list);
             Console.WriteLine("After Sort --->");
-            Utilities.Print(list);
+            PrintArray(list);
 
         }
 

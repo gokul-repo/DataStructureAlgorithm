@@ -1,14 +1,17 @@
 using System;
 
-namespace DataStructureAlgorithm.Sorting
+namespace DataStructureAlgorithm.Utilities
 {
     public static class Utilities
     {
-         public static void Print(int[] list){
-            foreach(var item in list){
+        public static void PrintArray(int[] list)
+        {
+            foreach (var item in list)
+            {
                 Console.Write(item + "  ");
             }
             Console.WriteLine();
         }
     }
+
 }

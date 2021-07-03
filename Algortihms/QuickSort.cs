@@ -1,4 +1,5 @@
 using System;
+using static DataStructureAlgorithm.Utilities.Utilities;
 
 namespace DataStructureAlgorithm.Algortihms
 {
@@ -23,10 +24,10 @@ namespace DataStructureAlgorithm.Algortihms
             int[] list = new int[] { 18, 5, 23, 7, 2, 42, 11, 98, 68, 87, 32, 12 };
             Console.WriteLine("----------------Quick Sort---------------");
             Console.WriteLine("Before Sort --->");
-            Print(list);
+            PrintArray(list);
             QSort(list, 0, list.Length - 1);
             Console.WriteLine("After Sort --->");
-            Print(list);
+            PrintArray(list);
         }
 
         public void QSort(int[] list,int strt,int end){
@@ -54,15 +55,6 @@ namespace DataStructureAlgorithm.Algortihms
             return i+1;
 
 
-        }
-
-        public static void Print(int[] list)
-        {
-            foreach (var item in list)
-            {
-                Console.Write(item + "  ");
-            }
-            Console.WriteLine();
         }
     }
 }

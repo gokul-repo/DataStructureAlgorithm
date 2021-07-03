@@ -19,8 +19,14 @@ namespace DataStructureAlgorithm
             //  QuickSort qs = new QuickSort();
             //  qs.QuickSort_Main();
 
-             MatrixMultiplication mm = new MatrixMultiplication();
-             mm.MM_Main();
+            //  MatrixMultiplication mm = new MatrixMultiplication();
+            //  mm.MM_Main();
+
+            // Heap h = new Heap(5);
+            // h.Heap_Main();
+
+            HeapSort hs = new HeapSort();
+            hs.HeapSort_Main();
         }
     }
 }

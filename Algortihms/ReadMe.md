@@ -13,7 +13,7 @@
 4. Quick Sort Recursive (2.8.1)
 5. Matrix Multiplication (2.9)
     - Solved only Matrix multiplication using 3 for loop approach
-
+6. Heaps/ Heapify/ Heap Sort (2.6.3)
 
 ## To Do
 1. Solve matrix multiplication using Divide and Conquer

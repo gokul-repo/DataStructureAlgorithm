@@ -1,4 +1,5 @@
 using System;
+using static DataStructureAlgorithm.Utilities.Utilities;
 
 namespace DataStructureAlgorithm.Sorting
 {
@@ -9,10 +10,10 @@ namespace DataStructureAlgorithm.Sorting
             int[] list = new int[] { 8, 5, 3, 7, 2, 4, 1, 9, 6 };
             Console.WriteLine("----------------Merge Sort---------------");
             Console.WriteLine("Before Sort --->");
-            Utilities.Print(list);
+            PrintArray(list);
             MergeSorting(list, 0, list.Length - 1);
             Console.WriteLine("After Sort --->");
-            Utilities.Print(list);
+           PrintArray(list);
         }
 
         public void MergeSorting(int[] list, int strt, int end)

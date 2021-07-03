@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using static DataStructureAlgorithm.Utilities.Utilities;
 
 namespace DataStructureAlgorithm.Sorting
 {
@@ -14,10 +15,10 @@ namespace DataStructureAlgorithm.Sorting
             int[] list = new int[] { 43, 17, 87, 92, 31, 6, 96, 13, 66, 62, 4 };
             Console.WriteLine("----------------Bucket Sort---------------");
             Console.WriteLine("Before Sort --->");
-            Utilities.Print(list);
+            PrintArray(list);
             BinSort(list);
             Console.WriteLine("After Sort --->");
-            Utilities.Print(list);
+            PrintArray(list);
 
         }
 
