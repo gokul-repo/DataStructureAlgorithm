@@ -2,6 +2,20 @@ using System;
 
 namespace DataStructureAlgorithm.Algortihms
 {
+    //Remeber - The best case of QUick sort is O( n Log n).
+    //But the worst case of QUick sort is O(n^2). Hence poor performance than Merge sort.
+    //The worst case happens n the scenario where list is already sorted
+    // we may avoid the n^2 worst case if we:
+        //1. Select middle element as pivot
+        //2. Select random element as pivot
+    
+    //Recurrence relation
+     //O(n *Log n)
+    //T(n) = 2 T(n/2) + n
+    // MAsters theorem for dividing functions (From Abdul bari's Video)
+        //Case 2.1
+        // logb a =1
+        //  n^k =n so k =1    
     public class QuickSort
     {
         public void QuickSort_Main()

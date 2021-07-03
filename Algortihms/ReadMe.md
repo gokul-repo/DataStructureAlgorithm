@@ -11,4 +11,10 @@
 2. Binary Search Recursive (2.6.2)
 3. Merge Sort Recursive (2.7.2)
 4. Quick Sort Recursive (2.8.1)
+5. Matrix Multiplication (2.9)
+    - Solved only Matrix multiplication using 3 for loop approach
+
+
+## To Do
+1. Solve matrix multiplication using Divide and Conquer
 

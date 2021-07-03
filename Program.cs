@@ -16,8 +16,11 @@ namespace DataStructureAlgorithm
             // MergeSort ms = new MergeSort();
             // ms.MergeSort_Main();
 
-             QuickSort qs = new QuickSort();
-             qs.QuickSort_Main();
+            //  QuickSort qs = new QuickSort();
+            //  qs.QuickSort_Main();
+
+             MatrixMultiplication mm = new MatrixMultiplication();
+             mm.MM_Main();
         }
     }
 }
