@@ -3,6 +3,7 @@ using static DataStructureAlgorithm.Utilities.Utilities;
 
 namespace DataStructureAlgorithm.Algortihms
 {
+    //MAX HEAP
     public class Heap
     {
         public int HeapSize;

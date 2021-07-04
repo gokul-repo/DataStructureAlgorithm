@@ -31,8 +31,11 @@ namespace DataStructureAlgorithm
             // Knapsack ks = new Knapsack();
             // ks.Knapsack_main();
 
-            JobSequencing js = new JobSequencing();
-            js.JobSequencing_main();
+            // JobSequencing js = new JobSequencing();
+            // js.JobSequencing_main();
+
+            MinHeap mh = new MinHeap(7);
+            mh.MinHeap_Main();
 
         }
     }

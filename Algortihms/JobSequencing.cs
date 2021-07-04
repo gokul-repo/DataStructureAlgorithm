@@ -72,7 +72,9 @@ namespace DataStructureAlgorithm.Algortihms
         {
             int n = jobs.Length;
             custComparer cust = new custComparer();
-            Array.Sort(jobs, cust);
+            //Two ways using sort i. Lambda or custom comparer function
+            Array.Sort(jobs, (a,b)=> b.Profit.CompareTo(a.Profit));
+           // Array.Sort(jobs, cust);
             int[] slot = new int[t];
             for (int i = 0; i < t; i++)
             {
@@ -105,6 +107,7 @@ namespace DataStructureAlgorithm.Algortihms
                 }
             }
             Console.WriteLine();
-        }
+        }       
+
     }
 }
