@@ -25,8 +25,12 @@ namespace DataStructureAlgorithm
             // Heap h = new Heap(5);
             // h.Heap_Main();
 
-            HeapSort hs = new HeapSort();
-            hs.HeapSort_Main();
+            // HeapSort hs = new HeapSort();
+            // hs.HeapSort_Main();
+
+            Knapsack ks = new Knapsack();
+            ks.Knapsack_main();
+
         }
     }
 }

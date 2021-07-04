@@ -15,6 +15,10 @@
     - Solved only Matrix multiplication using 3 for loop approach
 6. Heaps/ Heapify/ Heap Sort (2.6.3)
 
+### Greedy Algorithm
+
+1. Fractional Knapsack Problem (3.1)
+
 ## To Do
 1. Solve matrix multiplication using Divide and Conquer
 
