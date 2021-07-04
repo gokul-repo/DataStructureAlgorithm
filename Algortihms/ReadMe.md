@@ -13,12 +13,16 @@
 4. Quick Sort Recursive (2.8.1)
 5. Matrix Multiplication (2.9)
     - Solved only Matrix multiplication using 3 for loop approach
-6. Heaps/ Heapify/ Heap Sort (2.6.3)
+6. Heaps/ Heapify/ Heap Sort / Min Heap (2.6.3)
 
 ### Greedy Algorithm
 
 1. Fractional Knapsack Problem (3.1)
 2. Job Sequencing with Dealines (3.2)
+3. Optimal Merge Pattern (3.3)
+
+
+
 
 ## To Do
 1. Solve matrix multiplication using Divide and Conquer

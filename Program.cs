@@ -34,8 +34,11 @@ namespace DataStructureAlgorithm
             // JobSequencing js = new JobSequencing();
             // js.JobSequencing_main();
 
-            MinHeap mh = new MinHeap(7);
-            mh.MinHeap_Main();
+            // MinHeap mh = new MinHeap(7);
+            // mh.MinHeap_Main();
+
+            OptimalMergePattern omp = new OptimalMergePattern();
+            omp.OMP_main();
 
         }
     }
