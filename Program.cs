@@ -28,8 +28,11 @@ namespace DataStructureAlgorithm
             // HeapSort hs = new HeapSort();
             // hs.HeapSort_Main();
 
-            Knapsack ks = new Knapsack();
-            ks.Knapsack_main();
+            // Knapsack ks = new Knapsack();
+            // ks.Knapsack_main();
+
+            JobSequencing js = new JobSequencing();
+            js.JobSequencing_main();
 
         }
     }

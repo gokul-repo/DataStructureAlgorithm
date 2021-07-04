@@ -18,6 +18,7 @@
 ### Greedy Algorithm
 
 1. Fractional Knapsack Problem (3.1)
+2. Job Sequencing with Dealines (3.2)
 
 ## To Do
 1. Solve matrix multiplication using Divide and Conquer

@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
+
+
+// https://www.geeksforgeeks.org/fractional-knapsack-problem/
 
 namespace DataStructureAlgorithm.Algortihms
 {
