@@ -1,7 +1,6 @@
 ﻿using System;
 using DataStructureAlgorithm.Algortihms;
-
-
+using DataStructureAlgorithm.PriorityQueue;
 
 namespace DataStructureAlgorithm
 {
@@ -37,8 +36,11 @@ namespace DataStructureAlgorithm
             // MinHeap mh = new MinHeap(7);
             // mh.MinHeap_Main();
 
-            OptimalMergePattern omp = new OptimalMergePattern();
-            omp.OMP_main();
+            // OptimalMergePattern omp = new OptimalMergePattern();
+            // omp.OMP_main();
+
+            PriorityQueue<int> pq = new PriorityQueue<int>();
+            pq.PriorityQueue_Main();
 
         }
     }
