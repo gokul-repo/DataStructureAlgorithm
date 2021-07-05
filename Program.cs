@@ -46,6 +46,11 @@ namespace DataStructureAlgorithm
             LazyPrims lp = new LazyPrims();
             lp.LazyPrims_Main();
 
+            Kruskal k = new Kruskal();
+            k.Kruskal_Main();
+
+
+
         }
     }
 }

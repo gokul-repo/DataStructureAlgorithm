@@ -15,6 +15,7 @@
 13. William Fiset    -- Topological Sort - Kahns Algorithm
 14. William Fiset    -- SSSP - TopSort
 15. William Fiset    -- Lazy Prims Algorithm
+16. William Fiser    -- Kruskal Algorith - Union Find
 
 
 # To DO 
@@ -22,3 +23,4 @@
 1. William Fiset    -- Shortest Path in a Grid - BFS
 2. William Fiset    -- Print function for Rootinf a Tree (item 8) - Not important
 3. William Fiset    -- Lowest Common Ancestor - Euler Path method - Need to study Sparse Table DS
+4. William Fiset    -- Need to implement Eager Prims Algorithm ( Need to learn Indexed Priority Queue first)

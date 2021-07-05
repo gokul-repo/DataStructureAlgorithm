@@ -31,7 +31,7 @@ namespace DataStructureAlgorithm.Graph
             // myGraph.AddUndirectedEdge(5, 6, 1);
             // int numberOfNodes = 7;
             // PrimsMST(numberOfNodes);
-            //Console.WriteLine(totalMinCost);
+            // Console.WriteLine(totalMinCost);
             int numberOfNodes = 10;
             myGraph = new GraphDS();
             myGraph.AddUndirectedEdge(0, 1, 5);

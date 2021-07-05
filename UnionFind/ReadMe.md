@@ -8,4 +8,4 @@
 
 ## TO DO
 
-1. Kruskal Algorithm - MST
+1. Kruskal Algorithm - MST [DONE in Graph Folder]
