@@ -1,5 +1,6 @@
 ﻿using System;
 using DataStructureAlgorithm.Algortihms;
+using DataStructureAlgorithm.Graph;
 using DataStructureAlgorithm.PriorityQueue;
 
 namespace DataStructureAlgorithm
@@ -39,8 +40,11 @@ namespace DataStructureAlgorithm
             // OptimalMergePattern omp = new OptimalMergePattern();
             // omp.OMP_main();
 
-            PriorityQueue<int> pq = new PriorityQueue<int>();
-            pq.PriorityQueue_Main();
+            // PriorityQueue<int> pq = new PriorityQueue<int>();
+            // pq.PriorityQueue_Main();
+
+            LazyPrims lp = new LazyPrims();
+            lp.LazyPrims_Main();
 
         }
     }

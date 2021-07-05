@@ -20,6 +20,8 @@
 1. Fractional Knapsack Problem (3.1)
 2. Job Sequencing with Dealines (3.2)
 3. Optimal Merge Pattern (3.3)
+4. Prims Algo - MST (3.5)
+5. Kruskals Algo - MST (3.5)
 
 
 

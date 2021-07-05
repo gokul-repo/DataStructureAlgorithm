@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace DataStructureAlgorithm.PriorityQueue
 {
+    // https://www.dotnetlovers.com/article/231/priority-queue
     public class PriorityQueue<T>
     {
         public class Node
