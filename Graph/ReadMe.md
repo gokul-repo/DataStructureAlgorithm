@@ -14,6 +14,7 @@
 12. William Fiset    -- Topological Sort
 13. William Fiset    -- Topological Sort - Kahns Algorithm
 14. William Fiset    -- SSSP - TopSort
+15. William Fiset    -- Lazy Prims Algorithm
 
 
 # To DO 
