@@ -15,8 +15,9 @@
 13. William Fiset    -- Topological Sort - Kahns Algorithm
 14. William Fiset    -- SSSP - TopSort
 15. William Fiset    -- Lazy Prims Algorithm
-16. William Fiser    -- Kruskal Algorithm - Union Find
-16. William Fiser    -- Dijkstras Algorithm - Single Source shortest path
+16. William Fiset    -- Kruskal Algorithm - Union Find
+17. William Fiset    -- Dijkstras Algorithm - Single Source shortest path
+18. William Fiset    -- Bellman Ford - Single Source Shortest Path
 
 
 # To DO 

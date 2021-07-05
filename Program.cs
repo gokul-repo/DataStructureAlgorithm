@@ -49,8 +49,11 @@ namespace DataStructureAlgorithm
             // Kruskal k = new Kruskal();
             // k.Kruskal_Main();
 
-            Dijkstra dijkstra = new Dijkstra();
-            dijkstra.Dijkstra_Main();
+            // Dijkstra dijkstra = new Dijkstra();
+            // dijkstra.Dijkstra_Main();
+
+            BellmanFord bf = new BellmanFord();
+            bf.BellmanFord_Main();
 
         }
     }
