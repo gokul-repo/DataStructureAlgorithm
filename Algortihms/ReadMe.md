@@ -22,10 +22,12 @@
 3. Optimal Merge Pattern (3.3)
 4. Prims Algo - MST (3.5) - (Implemented in Graph Folder)
 5. Kruskals Algo - MST (3.5) - (Implemented in Graph Folder)
+6. Dijkstras Algo - SSSP (3.6) - (Implemented in Graph Folder)
 
 
 
 
 ## To Do
 1. Solve matrix multiplication using Divide and Conquer
+2. Huffman Coding
 

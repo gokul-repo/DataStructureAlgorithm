@@ -43,13 +43,14 @@ namespace DataStructureAlgorithm
             // PriorityQueue<int> pq = new PriorityQueue<int>();
             // pq.PriorityQueue_Main();
 
-            LazyPrims lp = new LazyPrims();
-            lp.LazyPrims_Main();
+            // LazyPrims lp = new LazyPrims();
+            // lp.LazyPrims_Main();
 
-            Kruskal k = new Kruskal();
-            k.Kruskal_Main();
+            // Kruskal k = new Kruskal();
+            // k.Kruskal_Main();
 
-
+            Dijkstra dijkstra = new Dijkstra();
+            dijkstra.Dijkstra_Main();
 
         }
     }
