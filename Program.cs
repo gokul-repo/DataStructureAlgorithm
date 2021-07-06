@@ -52,8 +52,11 @@ namespace DataStructureAlgorithm
             // Dijkstra dijkstra = new Dijkstra();
             // dijkstra.Dijkstra_Main();
 
-            BellmanFord bf = new BellmanFord();
-            bf.BellmanFord_Main();
+            // BellmanFord bf = new BellmanFord();
+            // bf.BellmanFord_Main();
+
+            Fibonnacci fib = new Fibonnacci();
+            fib.Fibonnacci_main();
 
         }
     }

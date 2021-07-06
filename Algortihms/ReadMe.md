@@ -24,7 +24,9 @@
 5. Kruskals Algo - MST (3.5) - (Implemented in Graph Folder)
 6. Dijkstras Algo - SSSP (3.6) - (Implemented in Graph Folder)
 
+### Dynamic Programming
 
+1. Fibonnacci - usingboth Memoization and Tabulation approach (4.0)
 
 
 ## To Do
