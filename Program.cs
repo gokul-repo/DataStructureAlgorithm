@@ -58,8 +58,11 @@ namespace DataStructureAlgorithm
             // Fibonnacci fib = new Fibonnacci();
             // fib.Fibonnacci_main();
 
-            MultiStageGraph multiStageGraph= new MultiStageGraph();
-            multiStageGraph.MultiStageGraph_Main();
+            // MultiStageGraph multiStageGraph= new MultiStageGraph();
+            // multiStageGraph.MultiStageGraph_Main();
+
+            FloydWarshall floydWarshall = new FloydWarshall();
+            floydWarshall.FloydWarshall_Main();
 
         }
     }

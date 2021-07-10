@@ -28,6 +28,7 @@
 
 1. Fibonnacci - using both Memoization and Tabulation approach (4.0)
 2. Multi Stage Graph (4.1)
+3. Floyd Warshall - APSP (4.2) - (Implemented in Graph Folder)
 
 
 ## To Do

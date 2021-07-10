@@ -18,6 +18,7 @@
 16. William Fiset    -- Kruskal Algorithm - Union Find
 17. William Fiset    -- Dijkstras Algorithm - Single Source shortest path
 18. William Fiset    -- Bellman Ford - Single Source Shortest Path
+19. William Fiset    -- Floyd Warshall - All Pairs Shortest Path
 
 
 # To DO 
@@ -27,3 +28,4 @@
 3. William Fiset    -- Lowest Common Ancestor - Euler Path method - Need to study Sparse Table DS
 4. William Fiset    -- Need to implement Eager Prims Algorithm ( Need to learn Indexed Priority Queue first)
 5. William Fiset    -- Need to implement Eager Dijkstras Algorithm ( Need to learn Indexed Priority Queue first)
+6. WIlliam Fiset    -- Reconstruct Path method on his implementation of APSP and iher algorithms
