@@ -55,8 +55,11 @@ namespace DataStructureAlgorithm
             // BellmanFord bf = new BellmanFord();
             // bf.BellmanFord_Main();
 
-            Fibonnacci fib = new Fibonnacci();
-            fib.Fibonnacci_main();
+            // Fibonnacci fib = new Fibonnacci();
+            // fib.Fibonnacci_main();
+
+            MultiStageGraph multiStageGraph= new MultiStageGraph();
+            multiStageGraph.MultiStageGraph_Main();
 
         }
     }

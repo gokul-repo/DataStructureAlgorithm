@@ -26,7 +26,8 @@
 
 ### Dynamic Programming
 
-1. Fibonnacci - usingboth Memoization and Tabulation approach (4.0)
+1. Fibonnacci - using both Memoization and Tabulation approach (4.0)
+2. Multi Stage Graph (4.1)
 
 
 ## To Do
