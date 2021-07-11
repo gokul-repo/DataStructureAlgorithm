@@ -3,6 +3,10 @@ using System.Collections.Generic;
 
 namespace DataStructureAlgorithm.Algortihms
 {
+    //https://github.com/mission-peace/interview/blob/master/src/com/interview/recursion/NQueenProblem.java
+    //https://www.youtube.com/watch?v=xouin83ebxE&t=1s&ab_channel=TusharRoy-CodingMadeSimple
+    
+
     public class Position
     {
         public int Row;
