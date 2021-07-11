@@ -31,6 +31,9 @@
 3. Floyd Warshall - APSP (4.2) - (Implemented in Graph Folder)
 4. Matrix Chain Multiplication - (4.3)
 
+### Back Tracking
+1. N Queens Problem
+
 
 ## To Do
 1. Solve matrix multiplication using Divide and Conquer

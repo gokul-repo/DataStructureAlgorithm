@@ -64,8 +64,11 @@ namespace DataStructureAlgorithm
             // FloydWarshall floydWarshall = new FloydWarshall();
             // floydWarshall.FloydWarshall_Main();
 
-            MatrixChainMultiplication mcm= new MatrixChainMultiplication();
-            mcm.MatrixChainMultiplication_Main();
+            // MatrixChainMultiplication mcm= new MatrixChainMultiplication();
+            // mcm.MatrixChainMultiplication_Main();
+
+            NQueensProblem nQueensProblem= new NQueensProblem();
+            nQueensProblem.NQueensProblem_main();
 
         }
     }
