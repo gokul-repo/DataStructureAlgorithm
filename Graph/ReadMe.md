@@ -19,6 +19,7 @@
 17. William Fiset    -- Dijkstras Algorithm - Single Source shortest path
 18. William Fiset    -- Bellman Ford - Single Source Shortest Path
 19. William Fiset    -- Floyd Warshall - All Pairs Shortest Path
+20. William Fiset    -- Tarjens - Strongly Connected Components
 
 
 # To DO 

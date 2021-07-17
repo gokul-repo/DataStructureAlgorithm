@@ -67,8 +67,14 @@ namespace DataStructureAlgorithm
             // MatrixChainMultiplication mcm= new MatrixChainMultiplication();
             // mcm.MatrixChainMultiplication_Main();
 
-            NQueensProblem nQueensProblem= new NQueensProblem();
-            nQueensProblem.NQueensProblem_main();
+            // NQueensProblem nQueensProblem= new NQueensProblem();
+            // nQueensProblem.NQueensProblem_main();
+
+            // SumofSubset ss = new SumofSubset();
+            // ss.SumofSubset_Main();
+
+            Tarjans scc = new Tarjans();
+            scc.Tarjans_Main();
 
         }
     }

@@ -33,6 +33,7 @@
 
 ### Back Tracking
 1. N Queens Problem
+2. Sum of subset problem
 
 
 ## To Do
