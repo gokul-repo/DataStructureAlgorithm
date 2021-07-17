@@ -20,6 +20,7 @@
 18. William Fiset    -- Bellman Ford - Single Source Shortest Path
 19. William Fiset    -- Floyd Warshall - All Pairs Shortest Path
 20. William Fiset    -- Tarjens - Strongly Connected Components
+21. William Fiset    -- Eulerian Path
 
 
 # To DO 

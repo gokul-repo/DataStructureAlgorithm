@@ -73,8 +73,11 @@ namespace DataStructureAlgorithm
             // SumofSubset ss = new SumofSubset();
             // ss.SumofSubset_Main();
 
-            Tarjans scc = new Tarjans();
-            scc.Tarjans_Main();
+            // Tarjans scc = new Tarjans();
+            // scc.Tarjans_Main();
+
+            EulerianPath ep = new EulerianPath();
+            ep.EulerianPath_Main();
 
         }
     }
