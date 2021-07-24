@@ -76,8 +76,10 @@ namespace DataStructureAlgorithm
             // Tarjans scc = new Tarjans();
             // scc.Tarjans_Main();
 
-            EulerianPath ep = new EulerianPath();
-            ep.EulerianPath_Main();
+            // EulerianPath ep = new EulerianPath();
+            // ep.EulerianPath_Main();
+
+
 
         }
     }

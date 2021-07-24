@@ -31,7 +31,7 @@ namespace DataStructureAlgorithm.LinkedList
 
 
         //To DO :
-        //1. Merge Two Sorted LL to One SOrted LL (Leet COde
+        //1. Merge Two Sorted LL to One SOrted LL (Leet COde)
         //2. LeetCode - LinkedList
         //3. Abdul Badri - STudent Challenges
         //4. Reverse a Doubly Linked List
