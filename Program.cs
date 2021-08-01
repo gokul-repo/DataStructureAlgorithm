@@ -1,6 +1,7 @@
 ﻿using System;
 using DataStructureAlgorithm.Algortihms;
 using DataStructureAlgorithm.Graph;
+using DataStructureAlgorithm.Leetcode;
 using DataStructureAlgorithm.PriorityQueue;
 
 namespace DataStructureAlgorithm
@@ -79,6 +80,9 @@ namespace DataStructureAlgorithm
             // EulerianPath ep = new EulerianPath();
             // ep.EulerianPath_Main();
 
+            DecodeString ds = new DecodeString();
+            ds.DecodeString1("3[a]2[bc]");
+            
 
 
         }
