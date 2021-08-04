@@ -57,9 +57,11 @@ namespace DataStructureAlgorithm.Leetcode
                 var head = leftMost;
                 while (head != null)
                 {
+                    // - Condition one - where both nodes have same parent
                     head.left.next = head.right;
                     if (head.next != null)
                     {
+                        //condition 2
                         head.right.next = head.next.left;
                     }
                     head = head.next;

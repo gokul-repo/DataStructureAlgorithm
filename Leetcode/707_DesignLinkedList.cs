@@ -6,16 +6,6 @@ namespace DataStructureAlgorithm.Leetcode
     {
 
     }
-    public class Node
-    {
-        public int val;
-        public Node next;
-        public Node(int x)
-        {
-            val = x;
-        }
-    }
-
     public class MyLinkedList
     {
         public int size;
