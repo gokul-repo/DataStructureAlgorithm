@@ -1,4 +1,5 @@
 ﻿using System;
+using Code;
 using DataStructureAlgorithm.Algortihms;
 using DataStructureAlgorithm.Graph;
 using DataStructureAlgorithm.Leetcode;
@@ -80,9 +81,18 @@ namespace DataStructureAlgorithm
             // EulerianPath ep = new EulerianPath();
             // ep.EulerianPath_Main();
 
-            DecodeString ds = new DecodeString();
-            ds.DecodeString1("3[a]2[bc]");
-            
+            //DecodeString ds = new DecodeString();
+            //ds.DecodeString1("3[a]2[bc]");
+
+            // FindKClosestElements fk = new FindKClosestElements();
+            // fk.main();
+
+            //ImplementStrStr str = new ImplementStrStr();
+            //str.Main();
+
+            ArrayImplementation arr = new ArrayImplementation();
+            arr.main();
+
 
 
         }

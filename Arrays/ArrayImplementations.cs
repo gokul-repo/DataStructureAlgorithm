@@ -2,10 +2,10 @@ using System;
 
 namespace Code
 {
-    internal class ArrayImplementation
+    public class ArrayImplementation
     {
         //static void Main(string[] args)
-        static void main(string[] args)
+        public void main()
         {
             //Array Operations
             //1. Create Array with user provided length

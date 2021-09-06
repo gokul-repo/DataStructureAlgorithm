@@ -56,8 +56,8 @@ namespace DataStructureAlgorithm.Leetcode
                 curr = myStack.Pop();
                 result.Add(curr.val);
                 curr = curr.right;
-            }
-            return result;
+            }            
+            return result;            
 
         }
 
