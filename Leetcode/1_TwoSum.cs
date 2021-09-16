@@ -48,7 +48,7 @@ namespace DataStructureAlgorithm.Leetcode
             return null;
         }
 
-        //One pass - using hashset
+        //One pass - using hashset test
         //Time -O(n)
         //Space - O(n)
         public int[] TwoSum3(int[] nums, int target)
