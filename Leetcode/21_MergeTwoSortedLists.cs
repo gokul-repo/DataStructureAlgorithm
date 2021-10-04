@@ -49,5 +49,53 @@ namespace DataStructureAlgorithm.Leetcode
 
         }
 
+        //Recursion
+        public ListNode MergeTwoLists1(ListNode l1, ListNode l2)
+        {
+            if (l1 == null)
+            {
+                return l2;
+            }
+            else if (l2 == null)
+            {
+                return l1;
+            }
+            else if (l1.val <= l2.val)
+            {
+                l1.next = MergeTwoLists1(l1.next, l2);
+                return l1;
+            }
+            else
+            {
+                l2.next = MergeTwoLists1(l1, l2.next);
+                return l2;
+            }
+        }
+
+        //Iteration - clean code
+        public ListNode MergeTwoLists2(ListNode l1, ListNode l2)
+        {
+            ListNode dummy = new ListNode(-1);
+            var prev = dummy;
+            while (l1 != null && l2 != null)
+            {
+                if (l1.val <= l2.val)
+                {
+                    prev.next = l1;
+                    l1 = l1.next;
+                }
+                else
+                {
+                    prev.next = l2;
+                    l2 = l2.next;
+                }
+                prev = prev.next;
+            }
+            prev.next = l1 == null ? l2 : l1;
+            return dummy.next;
+
+        }
+
+
     }
 }
